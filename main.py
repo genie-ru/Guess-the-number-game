@@ -27,7 +27,7 @@ target = random.randint(n, m)
 max_attempts = 10
 write_and_flush(f"{n}から{m}の間の数字を選びました。当ててみてください！\n")
 
-# メインのゲームループ
+# メインのゲームループをします
 for attempt in range(1, max_attempts + 1):
     guess = get_valid_input(f"試行 {attempt}/{max_attempts}. 予想を入力してください: ")
     
